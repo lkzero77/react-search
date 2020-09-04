@@ -76,7 +76,7 @@ function App() {
     setSelectedLanguage(option)
     let _data = dataOrigin
     _data = _data.filter(item => item.language.indexOf(option.value) !== -1)
-    setData(_data)
+    setData(sortByProp(_data, selectedSort.value, selectedSort.value === 'distance' ? true : false))
   }
 
   return (
