@@ -1,0 +1,14 @@
+$checked: orange;
+$noChecked: #333333;
+
+.rating-star {
+    display: block;
+
+    .star {
+        color: $noChecked;
+    }
+    
+    .checked {
+        color: $checked;
+    }
+}

@@ -1,0 +1,49 @@
+.dropdown {
+    position: relative;
+	display: inline-block;
+	
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: white;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		padding: 12px 16px;
+		z-index: 1;
+		border-radius: 10px;
+	}
+
+	.dropdown-selected {
+		padding: 2px 15px;
+		border-radius: 15px;
+		margin: auto 10px;
+		border: 1px solid gray;
+		min-width: 160px;
+
+		&.bc-green {
+			background-color: green;
+			border-color: transparent;
+		}
+	}
+
+	&.open {
+		.dropdown-content {
+			display: block;
+			.option {
+				padding: 10px 10px 10px 5px;
+				span {
+					margin-right: 10px;
+					font-size: 20px;
+				}
+
+				.color-green {
+					color: green;
+				}
+			}
+		}
+	}
+}
+  
+
+  
+ 
