@@ -1,5 +1,4 @@
 .App {
-  /* text-align: center; */
   font-family: Helvetica;
   color: #333333;
 }
@@ -8,7 +7,6 @@
   color: #61dafb;
 }
 
-.doctor-list-box {
-  display: block;
-  width: 80%;
+.rounded-10 {
+  border-radius: 10px;
 }

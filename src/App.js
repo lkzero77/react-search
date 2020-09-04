@@ -99,8 +99,8 @@ function App() {
             <div>Loading ...</div>
           ) :
           data.map(item => (
-            <div className="media border p-3 rounded my-3" key={item.id}>
-              <img src={item.avatar} alt={item.display_name} className="align-self-center mr-3 ml-2 rounded" style={{ width: 150 }}
+            <div className="media border p-3 rounded-10 my-3" key={item.id}>
+              <img src={item.avatar} alt={item.display_name} className="align-self-center mr-3 ml-2 rounded-10" style={{ width: 150 }}
                 onError={e => console.log(e)} />
               <div className="media-body">
                 <h3 className="font-weight-bold">{item.display_name}</h3>
